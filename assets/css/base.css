@@ -1,0 +1,244 @@
+:root {
+    /* color */
+    --white-color: #fff;
+    --primary-color: #3fd0d4;
+    --sub-text: #505050;
+
+    /*infor*/
+    --background-infor : black ;
+    --color-language : #16acb1;
+
+    --infor-height : 46px;
+    --infor-languge-width: 122px;
+    --infor-user-width: 48px;
+
+    /* logo image  */
+    --width-logo : 242px;
+    --height-logo : 82px;
+
+    /* list sub home */
+    --min-width : 234px;
+    --list-sub-home-color: rgb(85, 85, 85);
+    --list-sub-home-background-color: white;
+    --list__sub-menu2-width : 170px;
+
+}
+
+@font-face {
+    font-family: primary-font;
+    src: url(assets/font/pro-fa-light-300-5.9.0.woff2);
+}
+
+* {
+    font-family:Arial, Helvetica, sans-serif ; 
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+  
+html {
+    font-size: 62.5%;
+    line-height: 1.4rem;
+    font-family: "roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+.arrow_box {
+	position: absolute;
+	background: #88b7d5;
+    top: 0;
+    left: 0;
+}
+.arrow_box:after, .arrow_box:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: white;
+	border-width: 14px;
+	margin-left: 32px;
+}
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #817e7e;
+	border-width: 17px;
+	margin-left: 29px;
+}
+
+/* reponsive */
+.grid__full-width {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-row-footer {
+    width: 1700px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid {
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid-row-menu { 
+    width: 880px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+  
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+  
+  /* test */
+.c-2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+.c-10 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.332%;
+}
+
+.c-8 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 66.6667%;
+}
+
+.c-6 { 
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50%;
+}
+
+.c-7 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 58.33334%;
+}
+
+.c-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+}
+
+.c-5 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 41,66667%;
+}
+
+.c-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 33.33%;
+}
+
+.c-12 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+}
+
+.c-2-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+
+  
+
+/* animation  */
+@keyframes dropdown {
+    from {
+        height: 0;
+    }
+    to { 
+        height: 300%;
+    }
+} 
+
+@keyframes showUp {
+    from {
+        transform: translateY(100px);
+    }
+    to { 
+        transform: translateY(0);
+    }
+} 
+
+@keyframes fadeIn {
+    from { 
+        opacity: 0;
+    }
+    to { 
+        opacity: 1;
+    }
+}
+
+@keyframes lineUp {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}   
+
+@keyframes progress-Countryside {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 72%;
+    }
+}
+
+@keyframes progress-Vineyard {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 92%;
+    }
+}
+
+@keyframes progress-WineTasting {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 86%;
+    }
+}
+
+@keyframes modalFadeIn {
+    from { 
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
